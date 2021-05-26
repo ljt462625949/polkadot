@@ -3210,7 +3210,7 @@ dependencies = [
  "pallet-election-provider-multi-phase",
  "pallet-elections-phragmen",
  "pallet-gilt",
- "pallet-grandpa",
+ "pallet-grandpa 3.1.0",
  "pallet-identity",
  "pallet-im-online",
  "pallet-indices",
@@ -4689,6 +4689,26 @@ name = "pallet-grandpa"
 version = "3.0.0"
 source = "git+https://github.com/paritytech//substrate?branch=ser-update-wasmtime-0.27#40b9ed9d24cff0f833ae4c66a4a5cee7982ab5c4"
 dependencies = [
+ "frame-support",
+ "frame-system",
+ "log",
+ "pallet-authorship",
+ "pallet-session",
+ "parity-scale-codec",
+ "sp-application-crypto",
+ "sp-core",
+ "sp-finality-grandpa",
+ "sp-runtime",
+ "sp-session",
+ "sp-staking",
+ "sp-std",
+]
+
+[[package]]
+name = "pallet-grandpa"
+version = "3.1.0"
+source = "git+https://github.com/paritytech/substrate?branch=master#15731fec6d9e835e4f67b0399894672f4c81798e"
+dependencies = [
  "frame-benchmarking",
  "frame-support",
  "frame-system",
@@ -4699,6 +4719,7 @@ dependencies = [
  "sp-application-crypto",
  "sp-core",
  "sp-finality-grandpa",
+ "sp-io",
  "sp-runtime",
  "sp-session",
  "sp-staking",
@@ -4876,7 +4897,7 @@ dependencies = [
  "frame-system",
  "pallet-babe",
  "pallet-balances",
- "pallet-grandpa",
+ "pallet-grandpa 3.0.0",
  "pallet-im-online",
  "pallet-offences",
  "pallet-session",
@@ -6374,7 +6395,7 @@ dependencies = [
  "pallet-democracy",
  "pallet-election-provider-multi-phase",
  "pallet-elections-phragmen",
- "pallet-grandpa",
+ "pallet-grandpa 3.1.0",
  "pallet-identity",
  "pallet-im-online",
  "pallet-indices",
@@ -6708,7 +6729,7 @@ dependencies = [
  "pallet-authorship",
  "pallet-babe",
  "pallet-balances",
- "pallet-grandpa",
+ "pallet-grandpa 3.1.0",
  "pallet-indices",
  "pallet-mmr-primitives",
  "pallet-nicks",
@@ -7477,7 +7498,7 @@ dependencies = [
  "pallet-beefy",
  "pallet-bridge-grandpa",
  "pallet-collective",
- "pallet-grandpa",
+ "pallet-grandpa 3.1.0",
  "pallet-im-online",
  "pallet-indices",
  "pallet-membership",
@@ -11415,7 +11436,7 @@ dependencies = [
  "pallet-democracy",
  "pallet-election-provider-multi-phase",
  "pallet-elections-phragmen",
- "pallet-grandpa",
+ "pallet-grandpa 3.1.0",
  "pallet-identity",
  "pallet-im-online",
  "pallet-indices",
